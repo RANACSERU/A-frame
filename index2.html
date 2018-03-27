@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+
+    <title>Document 2</title>
+</head>
+
+<body>
+    <a-scene>
+        <a-assets>
+            <img id="boxTexture" src="images/profile.jpg">
+            <img id="skyTexture" src="images/360.JPG">
+            <img id="planeTexture" src="images/360.JPG">
+        </a-assets>
+        <!-- <a-entity environment="preset: forest; dressingAmount: 500"></a-entity> -->
+        <a-box src="#boxTexture" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
+        <a-sky src="#skyTexture"></a-sky>
+        <a-plane src="#planeTexture" rotation="-90 0 0" width=".3" height=".3"></a-plane>
+         <a-light type="ambient" color="red"></a-light>
+        <!-- <a-light type="point" intensity="2" position="2 4 4"></a-light> -->
+    
+        <a-camera>
+            <a-cursor></a-cursor>
+        </a-camera>
+    
+    
+    
+    
+    </a-scene>
+</body>
+
+</html>
